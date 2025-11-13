@@ -1,1 +1,6 @@
 ffmpeg -re -i /home/indowings/Mqtt-videostream/Mqtt-video-streaming/2024-11-13_13-29-51.avi -rtsp_transport tcp -f rtsp rtsp://65.0.71.42:8554/test
+
+
+
+
+ffmpeg -f v4l2 -i /dev/video2 -rtsp_transport tcp -f rtsp rtsp://13.201.184.38:8554/test
