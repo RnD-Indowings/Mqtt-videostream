@@ -1,4 +1,4 @@
-for pre-recorede video streaming:
+for pre-recorded video streaming:
 ffmpeg -re -i /home/indowings/Mqtt-videostream/Mqtt-video-streaming/2024-11-13_13-29-51.avi -rtsp_transport tcp -f rtsp rtsp://65.0.71.42:8554/test
 
 
