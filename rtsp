@@ -5,3 +5,7 @@ ffmpeg -re -i /home/indowings/Mqtt-videostream/Mqtt-video-streaming/2024-11-13_1
 
 for live video streaming:
 ffmpeg -f v4l2 -i /dev/video2 -rtsp_transport tcp -f rtsp rtsp://13.201.184.38:8554/test
+
+
+for windows live streaming:
+ffmpeg -f dshow -rtbufsize 512M -i video="USB3 Video" -rtsp_transport tcp -vcodec libx264 -pix_fmt yuv420p -preset ultrafast -tune zerolatency -f rtsp rtsp://13.201.184.38:8554/test
