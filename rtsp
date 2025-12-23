@@ -9,3 +9,7 @@ ffmpeg -f v4l2 -i /dev/video2 -rtsp_transport tcp -f rtsp rtsp://13.201.184.38:8
 
 for windows live streaming:
 ffmpeg -f dshow -rtbufsize 512M -i video="USB3 Video" -rtsp_transport tcp -vcodec libx264 -pix_fmt yuv420p -preset ultrafast -tune zerolatency -f rtsp rtsp://13.201.184.38:8554/test
+
+
+getac
+ffmpeg -f dshow -rtbufsize 512M -i video="USB2 Video" -vcodec libx264 -preset ultrafast -tune zerolatency -pix_fmt yuv420p -rtsp_transport tcp -f rtsp rtsp://127.0.0.1:8554/test
